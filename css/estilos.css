@@ -12,8 +12,8 @@ input,button{padding:0.25rem 0.5rem;border-radius: 0.4rem;border:0 solid rgba(0,
     position: absolute;
     }
 body{
-	background-color: lightblue;
-	color: darkblue;
+	/*background-color: lightblue;*/
+	color: #b3dfd1d9;
 }
 h1{
 	font-family: 'Arial',sans-serif;
@@ -30,13 +30,14 @@ p:Hover{
 	color:white;
 	background-color: #1e8fd1;
 	border-radius: 10px;
-	font-size: 1.5rem;
+	/*font-size: 1.5rem;*/
 	cursor: default;
 }
 .row {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 10px;
+	align-items: flex-start;
 }
 
 .column {
@@ -144,4 +145,22 @@ form input:Hover{transform: scale(1.2);}
 }
 @media (max-width: 330px) {
 	iframe {width: 80vmin;height: 45vmin;}
+}
+.fondo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	background: url('../img/fondo.jpg');
+}
+.container{
+	border: 0 solid;
+	border-radius: 2vmin;
+	margin: 3vmin;
+	background-color: #00000099;
+	max-height: 80vh;
+	overflow-y:auto;
 }
